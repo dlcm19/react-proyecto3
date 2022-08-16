@@ -1,0 +1,149 @@
+body{
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: rgb(71, 110, 95);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2{
+    margin: 0px;
+}
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(71, 110, 95); */
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.article_App_ResidentInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+    
+}
+/************* style the component InputSearch**************/
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+  
+}
+input{
+    height: 48px;
+    font-size: xx-large ;
+    border: none;
+    text-align: center; 
+    background-color: rgb(113, 211, 178);
+}
+button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(61, 55, 55);
+    font-size: large; 
+}
+button:hover{
+    opacity: 0.7s;
+    background-color: black;
+}
+button:active{
+    transform: scale(0.9);
+}
+/************* End style the component InputSearch**************/
+
+/************* style the component Location **************/
+.h1{
+    text-align: center;
+    font-size: 50px;
+   
+}
+.container_data{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: small;
+    flex-direction: row;
+}
+.span_conatiner_data{
+    color: black;
+}
+/************* end style the component Location **************/
+
+/*************  style the component ResidentInfo **************/
+
+   .container_RedidentInfo{
+    background-color: rgb(32, 53, 54);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(25, 73, 77);
+   
+   }
+   .container_RedidentInfo:hover{
+    background-color: rgb(71, 110, 95);
+   }
+   ul {
+    list-style: none;
+}
+img{
+  
+    border-radius: 20px;
+}
+img:hover{
+    box-shadow: 2px 2px 2px 2px;
+}
+.span_Residentinfo{
+    color: black;
+    font-size: large;
+}
+
+/************* end style the component ResidentInfo **************/
+
+@media (max-width: 565px) {
+    .container_RedidentInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+     
+    }
+  }
+  @media (max-width: 360px) { 
+    input{
+    width: 340px;
+    }
+    .input_Search{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; 
+            }
+
+  }
+  @media (max-width: 280px) { 
+    .input_Search{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+            }
+  }
